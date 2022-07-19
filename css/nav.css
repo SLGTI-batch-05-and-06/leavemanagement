@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz@1,6..96&family=Poppins&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif ;
+
+}
+body{
+    position:relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background:#CCC7D1 ;
+
+}
+sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 240px;
+    background:#CCC7D1 ;
+    padding: 6px 14px;
+}

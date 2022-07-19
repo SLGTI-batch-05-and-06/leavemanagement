@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz@1,6..96&family=Poppins&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    background:#CCC7D1 ;
+    color: black;
+}
+.button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+
+}
+
+
+.table-header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px;
+}
+.icon-button{
+    padding: 10px;
+    }
+.card{
+        width:100% ;
+    }

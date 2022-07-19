@@ -1,20 +1,21 @@
 <?php include_once('Script.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Admin dashboard</title>
 </head>
 
-<body>
+<body >
     <div style="margin-left: 10px; margin-right:10px; padding:10px;">
         <div class="row">
             <div class="col-sm-12">
                 <div class="card bg-light text-white">
-                    <img class="card-img" src="../proimg/hrms-im.jpg" alt="Card image" style="height:200px; width:350px;">
+                    <img class="card-img" src="../leaveimg/hrms-im.jpg" alt="Card image" style="height:200px; width:350px;">
                     <div class="card-img-overlay">
                         <h1 class="card-title" style="text-align:center; color:black;">Welcome Back</h1>
                         <p class="card-text">
@@ -29,8 +30,8 @@
         <br>
         <div class="row">
             <div class="col-sm-3">
-                <div class="card bg-dark text-white">
-                    <img class="card-img" src="../proimg/PngItem_1298175.png" style="height:40px; width:40px;">
+                <div class="card bg-light text-white">
+                    <img class="card-img" src="../leaveimg/PngItem_1298175.png" style="height:40px; width:40px;">
                     <div class="card-body">
                         Total Staff
                     </div>
@@ -38,8 +39,8 @@
             </div>
 
             <div class="col-sm-3">
-                <div class="card bg-dark text-white">
-                    <img class="card-img" src="../PngItem_1139280.png" style="height:40px; width:40px;">
+                <div class="card bg-white text-dark">
+                    <img class="card-img" src="../leaveimg/PngItem_1139280.png" style="height:40px; width:40px;">
                     <div class="card-body">
                         Approved Leave
                     </div>
@@ -47,8 +48,8 @@
             </div>
 
             <div class="col-sm-3">
-                <div class="card bg-dark text-white">
-                    <img class="card-img" src="../PngItem_1139280.png" style="height:40px; width:40px;">
+                <div class="card bg-White text-dark">
+                    <img class="card-img" src="../leaveimg/PngItem_1139280.png" style="height:40px; width:40px;">
                     <div class="card-body">
                         Pending Leave
                     </div>
@@ -56,8 +57,8 @@
             </div>
 
             <div class="col-sm-3">
-                <div class="card bg-dark text-white">
-                    <img class="card-img" src="../PngItem_1139280.png" style="height:40px; width:40px;">
+                <div class="card bg-light text-dark">
+                    <img class="card-img" src="../leaveimg/PngItem_1139280.png" style="height:40px; width:40px;">
                     <div class="card-body">
                         Rejected Leave
                     </div>
@@ -71,7 +72,7 @@
         <div class="row">
             <div class="col-sm-4">
                 <div class="card" style="width:100%; padding:10px;">
-
+                   <img class="card-img" src="../leaveimg/PngItem_5444333.png" style="height:30px; width:30px; align:left;">
                     <div class="card-body">
                         <h2>Department Heads</h2>
                     </div>
@@ -117,76 +118,101 @@
                     </th>
                 </tr>
                 <tr>
-
+                    <th scope="col">#</th>
+                    
                     <th scope="col">Staff name</th>
-                    <th scope="col">Leave Type</th>
-                    <th scope="col">Applied Date</th>
-                    <th scope="col">Hod Status</th>
-                    <th scope="col">Reg Status</th>
+                    <th scope="col"> Leave type</th>
+                    <th scope="col"> Applied date</th>
+                    <th scope="col"> Status</th>
                     <th scope="col">Action</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-
+                    
                     <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td>
-                        <button type="button"><img src="../proimg/PngItem_3204312.png" style="width:20px; height:20px;">
+                    <div class="icon">
+
+<a href="#" class="icon">
+    <i class="fa fa-eye fa-2x" style="color:black"></i>
+</a>
+</div>
                     </td>
                 </tr>
 
 
 
                 <tr>
-
+                    
                     <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td>
-                        <button type="button"><img src="../proimg/PngItem_3204312.png" style="width:20px; height:20px; ">
+                    <div class="icon">
+
+<a href="#" class="icon">
+    <i class="fa fa-eye fa-2x" style="color:black"></i>
+</a>
+</div>
                     </td>
                 </tr>
 
 
                 <tr>
-
+                    
                     <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td>
-                        <button type="button"><img src="../proimg/PngItem_3204312.png" style="width:20px; height:20px;">
+                        <div class="icon">
+
+                            <a href="#" class="icon">
+                                <i class="fa fa-eye fa-2x " style="color:black"></i>
+                            </a>
+                        </div>
                     </td>
                 </tr>
 
                 <tr>
-
+                   
                     <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td>
-                        <button type="button"><img src="../proimg/PngItem_3204312.png" style="width:20px; height:20px;">
+                    <div class="icon">
+
+<a href="#" class="icon">
+    <i class="fa fa-eye fa-2x" style="color:black" ></i>
+</a>
+</div>
                     </td>
                 </tr>
 
                 <tr>
-
+                    
                     <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td>
-                        <button type="button"><img src="../proimg/PngItem_3204312.png" style="width:20px; height:20px; ">
+                    <div class="icon">
+
+<a href="#" class="icon">
+    <i class="fa fa-eye fa-2x"  style="color:red"></i>
+</a>
+</div>
                     </td>
                 </tr>
             </tbody>
