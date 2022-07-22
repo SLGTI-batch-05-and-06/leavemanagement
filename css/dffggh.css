@@ -1,50 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz@1,6..96&family=Poppins&display=swap');
-
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family:'Poppins', sans-serif ;
-
-}
-.sidebar{
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: #11101d;
-    height: 100%;
-    width: 250px;
-
-}
-.sidebar .logo-detail {
-   height: 60px;
-   width: 100%;
-   display: flex;
-   align-items: center;
-}
-
-.sidebar .logo-detail i{
-    font-size: 30px;
-    color:#fff;
-    height: 50px;
-    min-width: 78px;
-    text-align: center;
-    line-height: 50px;
-
-}
-.sidebar .logo-detail .logo-name  {
-    font-size: 22px;
-    color:#fff;
-    font-weight: 600px;
-
-}
 .sidebar .nav-links{
-background:black;
-height: 100%;
-padding-top: 30px;
-overflow: auto;
-}
+    background: #1d1b31;
+    height: 100%;
+    padding-top: 30px;
+    }
 .sidebar .nav-links li{
     position: relative;
     list-style: none;
@@ -59,10 +17,9 @@ background: #1d1b31;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color:#fff;
-    font-size: 20px;
 
-} 
+}
+
 .sidebar .nav-links li i{
     font-size: 20px;
     color:#fff;
@@ -82,7 +39,7 @@ background: #1d1b31;
 }
 .sidebar .nav-links li a .link-name{
     font-size: 18px;
-    font-weight: 400;
+   
     color: #fff;
 
 }
@@ -90,7 +47,7 @@ background: #1d1b31;
     padding: 6px 6px 14px 80px;
     margin-top: -10px;
     background: #1d1b31;
-   display: none;
+    display: none;
 
 }
 .sidebar .nav-links li .sub-menu a {
@@ -115,8 +72,8 @@ background: #1d1b31;
    padding: 10px 20px;
    border-radius: 0 6px 6px 0;
    transition: all 0.4s ease;
-   /*opacity: 0;
-   pointer-events: none;*/
+   opacity: 0;
+   pointer-events: none;
 
 
 }
@@ -129,22 +86,7 @@ background: #1d1b31;
 }
 .sidebar.close  .nav-links li .sub-menu .link-name{
 font-size: 18px;
-opacity: 0;
+opacity: 1;
 display: block;
 
-}
-.home section{
-    position: relative;
-    background: red;
-    left: 250px;
-    width: calc(100% - 260px);
-}
-.home section .home content{
-    height: 60px;
-    display: flex;
-    align-items: center;
-
-}
-.home section .home content .bx-menu{
-    color: #fff;
 }

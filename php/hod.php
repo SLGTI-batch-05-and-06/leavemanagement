@@ -5,15 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="../css/admin.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Admin dashboard</title>
 </head>
 
 <body >
+<?php include_once('navbar.php');
+   include_once('topnav.php'); ?>
     <div style="margin-left: 10px; margin-right:10px; padding:10px;">
         <div class="row">
-            <div class="col-sm-12">
+        <div class="col-sm-2"></div>
+            <div class="col-sm-10">
                 <div class="card bg-light text-white">
                     <img class="card-img" src="../leaveimg/hrms-im.jpg" alt="Card image" style="height:200px; width:350px;">
                     <div class="card-img-overlay">
@@ -23,8 +26,8 @@
 
                     </div>
                 </div>
-            </div>
-        </div>
+           
+       
         <br>
         <h2>Data Information</h2>
         <br>
@@ -217,6 +220,8 @@
                 </tr>
             </tbody>
         </table>
+        </div>
+        </div>
     </div>
 
 </body>

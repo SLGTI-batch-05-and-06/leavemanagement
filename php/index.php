@@ -11,11 +11,14 @@
 </head>
 
 <body >
+<?php include_once('navbar.php');
+   include_once('topnav.php'); ?>
     <div style="margin-left: 10px; margin-right:10px; padding:10px;">
         <div class="row">
-            <div class="col-sm-12">
-                <div class="card bg-light text-white">
-                    <img class="card-img" src="../leaveimg/hrms-im.jpg" alt="Card image" style="height:200px; width:350px;">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-10">
+                <div class="card bg-light text-white" >
+                    <img class="card-img" src="../leaveimg/hrms-im.jpg" alt="Card image" style="height:200px; width:400px;">
                     <div class="card-img-overlay">
                         <h1 class="card-title" style="text-align:center; color:black;">Welcome Back</h1>
                         <p class="card-text">
@@ -23,8 +26,8 @@
 
                     </div>
                 </div>
-            </div>
-        </div>
+            
+       
         <br>
         <h2>Data Information</h2>
         <br>
@@ -73,9 +76,9 @@
                 </div>
             </div>
 
+            </div>
 
-
-        </div>
+       
         <br>
         <div class="row">
             <div class="col-sm-4">
@@ -113,9 +116,9 @@
         </div>
 
         <br>
-
-
-        <br>
+       <br>
+       <div class="row"  >
+       <div class="col-sm-12">
         <div class="card">
         <table class="table table-striped">
 
@@ -156,16 +159,14 @@
 
 
 
-              
-
-
-
-               
-                
-
-            </tbody>
-        </table>
-    </div>
+                </div>
+                </div>
+                </div>
+</div>
+</div>
+</tbody>
+</table>
+</div>
 
 </body>
 

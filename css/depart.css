@@ -47,7 +47,10 @@ body{
 padding: 10px;
 }
 
-
+.alert{
+    
+    background:gold;
+}
 
 
    

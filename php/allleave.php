@@ -12,12 +12,14 @@ include_once('config.php'); ?>
     <title>Document</title>
 </head>
 <body>
+<?php include_once('navbar.php');
+   include_once('topnav.php'); ?>
 <div class="container">
 <br>
 <div style="margin-left: 10px; margin-right:10px; padding:10px;">
 <div class="row">
-<div class="col-sm-2"></div>
-<div class="col-sm-10">
+<div class="col-sm-3"></div>
+<div class="col-sm-8">
 <div class="card">
 <div class="card-header" style="height: 80px;">
 <table class="table table-striped">
@@ -68,32 +70,32 @@ ALL LEAVE APPLICATION
                             </tr>
                             </thead>
                             <tbody>
-                               <?php
-                                 //edit
-                                $sql="select * from staff";
-                                $result=mysqli_query($con,$sql);
-                                if(mysqli_num_rows($result)>0)
-                                {
-                                 while($row = mysqli_fetch_assoc($result))  //separate ech row
+                            <?php
+                                 
+                                 $sql="select * from leave";
+                                 $result=mysqli_query($con,$sql);
+                                 if(mysqli_num_rows($result)>0)
                                  {
-                                    echo '<tr>
-                                    <td>',$row[''],'</td>
-                                    <td>',$row[''],'</td>
-                                    <td>',$row[''],'</td>
-                                    <td>',$row[''],'</td>
-                                    <td>',$row[''],'</td>
-                                    <td>
-                               <a href="', $row['id'],'"><button type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModal1"><i class="fa fa-pencil" style="color:blue "></i></button></a>  <a href="?delete=', $row['id'],'"><button type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-trash o" style="color:black"></button></i></a>
-                               </td>
-                                    </tr>
-                                    ';
+                                  while($row = mysqli_fetch_assoc($result))  //separate each row
+                                  {
+                                     echo '<tr>
+                                     <td>',$row['fullname'],'</td>
+                                     <td>',$row['Leavetype'],'</td>
+                                     <td>',$row['applieddate'],'</td>
+                                     <td>',$row['hodstatus'],'</td>
+                                     <td>',$row['regstatus'],'</td>
+                                     <td>
+                                
+                                </td>
+                                     </tr>
+                                     ';
+                                  }
                                  }
-                                }
-                                else
-                                {
-                                    echo "no rows";
-                                }
-                                ?>
+                                 else
+                                 {
+                                     echo "no rows";
+                                 }
+                                 ?>
                         </div>
                         
                         </div>

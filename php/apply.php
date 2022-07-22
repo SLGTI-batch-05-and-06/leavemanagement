@@ -12,6 +12,8 @@ include_once('config.php'); ?>
     <title>Document</title>
 </head>
 <body>
+<?php include_once('side.php');
+   include_once('topnav.php'); ?>
 <div class="container">
 <div style="margin-left: 10px; margin-right:10px; padding:10px;">
 <div class="row">
@@ -26,12 +28,52 @@ include_once('config.php'); ?>
     <div class="col-sm-4">
             <form>
              First Name<input type="text"  class="form-control" >
-             Phone no<input type="text"  class="form-control" >
+            Email address<input type="text"  class="form-control" >
              Applied no of days<input type="text"  class="form-control" >
 
             </div>
+            <div class="col-sm-4">
+            </div>
+            <div class="col-sm-4">
+           
+            Last Name<input type="text"  class="form-control" >
+           Available leave days<input type="text"  class="form-control" >
+            </div>
+    </div>
+    <div class="row" >
+   <div class="col-sm-12">
+   Leave type<input type="text"  class="form-control" >
+   </div>
+     
+    
+    <div class="row">
+        <div class="col-sm-4">
+        Start leave date
+        <input type="text"  class="form-control" >
+        </div>
+        <div class="col-sm-4">
+       
+        </div>
+        <div class="col-sm-4">
+       End leave date
+        <input type="text"  class="form-control" >
+        </div>
+    </div>
+  
+    
+</div>
+<div class="row">
+    <div class="col-sm-9">
+    Reason for value<br><textarea name="message" name="message" value="message" style="width:70% ; margin-left: 10px;padding:10px;" class="form-control"></textarea>
+    
+    </div>
+    <br>
+    <div class="col-sm-3">
+    <input type="submit"  value="Save" name="save" class="btn btn-secondary">
     </div>
    
+</div>
+</div>
 </div>
 </div>
 </div>

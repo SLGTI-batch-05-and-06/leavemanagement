@@ -15,7 +15,8 @@ include_once('config.php'); ?>
 
 <body>
 
-   
+<?php include_once('navbar.php');
+   include_once('topnav.php'); ?>
     <div class="container">
         <?php
        $deptno=null;
@@ -48,7 +49,7 @@ include_once('config.php'); ?>
         if(mysqli_query($con,$sql))
         {
             ?>
-            <div class="alert alert-danger" role="alert" style="width: 100%;">
+            <div class="alert alert-danger" role="alert" style="margin-left:10px; margin-right:20px; padding:10px;">
               Delete successfull
             </div>
             <?php
@@ -67,9 +68,9 @@ include_once('config.php'); ?>
    if(mysqli_fetch_row($result)==1)
    {
        $r=mysqli_num_rows($result);
-       $deptno=$r['deptno'];
-       $deptname=$r['deptname'];
-       $deptshortname=$r['deptshortname'];
+       $deptno=$row['deptno'];
+       $deptname=$row['deptname'];
+       $deptshortname=$row['deptshortname'];
    }
  }
  //edit finished
@@ -210,7 +211,7 @@ include_once('config.php'); ?>
                                                     <div class="modal-footer">
 
                                                         <input type="submit" name="Save" class="btn btn-primary" value="Save">
-                                                        <input type="reset" name="Cancel" class="btn btn-secondary" value="Cancel">
+                                                        <input type="reset"  name="reset" class="btn btn-secondary" value="Cancel">
                                                     </div>
                                                 </form>
                                             </div>

@@ -14,24 +14,21 @@ include_once('config.php'); ?>
 
 
 <body>
-<?php include_once('nav.php'); ?>
+<?php include_once('navbar.php'); ?>
 <div class="container">
 <div style="margin-left: 10px; margin-right:10px; padding:10px;">
         <div class="row">
-            <div class="col-sm-2"></div>
+            <div class="col-sm-3"></div>
             <div class="col-sm-8">
     <div class="card-header" style="height: 80px;">
     
     <table class="table table-striped">
                             <div class="table-header">
                         <p>Administration Break down</p>
-                        <form action="php/addstaff.php" method="$_POST">
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                        <div class="icon">
-                        <a href="#" class="icon">
-                        <i class="fa fa-plus" style="color:white">Add staff</i>
-                        </a>
-                        </div>
+                        <form action="../php/addstaff.php" method="$_POST">
+                       <input type="submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" value="+Add staff" i class="fa fa-plus" style="color:white"></i>
+                        
+                       
                         </button>
                         </form>
 
@@ -65,13 +62,13 @@ include_once('config.php'); ?>
                                   while($row = mysqli_fetch_assoc($result))  //separate each row
                                   {
                                      echo '<tr>
-                                     <td>',$row['fullname'],'</td>
-                                     <td>',$row['Email'],'</td>
+                                     <td>',$row['lastname'],'</td>
+                                     <td>',$row['email'],'</td>
                                      <td>',$row['department'],'</td>
-                                     <td>',$row['Position'],'</td>
-                                     <td>',$row['Avgleave'],'</td>
+                                     <td>',$row['position'],'</td>
+                                     <td>',$row['avgleave'],'</td>
                                      <td>
-                                <a href="?edit=', $row['id'],'"><button type="button" class="btn btn-light "  ><i class="fa fa-pencil" style="color:blue "></i></button></a>  <a href="?delete=', $row['id'],'"><button type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-trash o" style="color:black"></button></i></a>
+                                
                                 </td>
                                      </tr>
                                      ';

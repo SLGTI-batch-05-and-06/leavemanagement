@@ -12,25 +12,28 @@ include_once('config.php'); ?>
     <title>Document</title>
 </head>
 <body>
-<!--dhfh><?php include_once('nav.php'); ?><!-->
+<?php include_once('navbar.php'); ?>
 <div class="container">
     <?php
             
-            if(isset($_POST['Save']))//isset meaning equal
+            if(isset($_POST['save']))//isset meaning equal
             {
-              $fullname=$_POST['fullname'];
-             $email =$_POST['email '];
+              $staffid =$_POST['staffid'];
+              $firstname=$_POST['firstname'];
+              $lastname=$_POST['lastname'];
+              $email=$_POST['email'];
               $department=$_POST['department'];
-              $position =$_POST['position '];
+              $position=$_POST['position'];
               $avgleave=$_POST['avgleave'];
-              $sql="INSERT INTO staff(fullname,email,department,position,avgleave) VALUES ('$fullname','$Email','$department','$Position','$Avgleave')";
-             if(mysqli_query($con,$sql)) 
+              $sql="INSERT INTO  staff(staffid,firstname,lastname,email,department,position,avgleave) VALUES ('$staffid','$firstname','$lastname','$email','$department','$position',$avgleave)";
+              if(mysqli_query($con,$sql)) 
               {
-                 echo "insert success";
+                
+              Echo "insert successfull";
               }
               else
               {
-                 echo "error:". mysqli_error($con);
+                echo "error:". mysqli_error($con);
               }
             }
             
@@ -41,7 +44,7 @@ include_once('config.php'); ?>
     
 <div style="margin-left: 10px; margin-right:10px; padding:10px;">
 <div class="row">
-<div class="col-sm-2"></div>
+<div class="col-sm-3"></div>
 <div class="col-sm-8">
     <div class="card">
     <div class="card-header">
@@ -56,18 +59,18 @@ include_once('config.php'); ?>
     <div class="card-body">
         <div class="row">
         <div class="col-sm-6">
-        <form >
-      Staff_Id<input type="text" class="form-control" >
-      First name<input type="text" class="form-control" >
-      Last name<input type="text" class="form-control" >
+        <form action="" method="post">
+      Staff_Id<input type="text" class="form-control" name="staffid">
+      First name<input type="text" class="form-control" name="firstname">
+      Last name<input type="text" class="form-control" name="lastname">
       Gender<br>
       <select name=""  class="form-control" style="width: 100%;">
         <option value="female">Female</option>
         <option value="male">male</option>
       </select>
-      Date of birth<input type="text" class="form-control" >
-   NIC<input type="text" class="form-control">
-   Address<br><textarea name="enter your address" rows="05" columns="20" class="form-control" ></textarea>
+      Date of birth<input type="text" class="form-control" name="dateofbirth">
+   NIC<input type="text" class="form-control" name="nc">
+   Address<br><textarea name="enter your address" rows="05" columns="20" class="form-control" name="address" ></textarea>
    <br>
    <div class="row">
     <div class="col-sm-6">
@@ -79,15 +82,15 @@ include_once('config.php'); ?>
    </div>
    </div>
    
-</form>
+
 </div>
        
 
 <div class="col-sm-6">
-Email<input type="text" class="form-control" >
-Department<input type="text" class="form-control" >
-Staff leave days<input type="text" class="form-control" >
-User Role<input type="text" class="form-control" >
+Email<input type="text" class="form-control"  name="email">
+Department<input type="text" class="form-control" name="department">
+Staff leave days<input type="text" class="form-control" name="avgleave" >
+User Role<input type="text" class="form-control" name="position">
 profile
 <input type="file" class="form-control-file" id="exampleFormControlFile1">
 </div>
@@ -106,7 +109,7 @@ profile
     </div>
     </div> 
   </div>
-  
+  </form>
 </div>
 </div>
 </div>
