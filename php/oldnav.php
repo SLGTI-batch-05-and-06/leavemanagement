@@ -1,23 +1,3 @@
-<?php include_once('index.php') ;?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-<script>
-$(document).ready(function () {
-    $('#sidebarCollapse').on('click', function () {
-        $('#sidebar').toggleClass('active');
-    });
-});
-
-    </script>
-</body>
-
 <div class="wrapper" style="height:100%;">
         <!-- Sidebar  -->
         <nav id="sidebar">
@@ -58,7 +38,7 @@ $(document).ready(function () {
                     <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class='bx bx-user'>staff</i></a>
                     <ul class="collapse list-unstyled" id="pageSubmenu">
                         <li>
-                            <a href="#">New staff</a>
+                            <a href="../php/addstaff.php">New staff</a>
                         </li>
                         <li>
                             <a href="../php/staffreg.php">Manage staff</a>
@@ -82,4 +62,3 @@ $(document).ready(function () {
             </ul>
         </nav>
         </div>
-</html>

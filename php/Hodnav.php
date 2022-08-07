@@ -1,14 +1,18 @@
-<?php include_once('index.php') ;?>
+<?php include_once('script.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/navig.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 <body>
-<script>
+    <script>
 $(document).ready(function () {
     $('#sidebarCollapse').on('click', function () {
         $('#sidebar').toggleClass('active');
@@ -16,8 +20,6 @@ $(document).ready(function () {
 });
 
     </script>
-</body>
-
 <div class="wrapper" style="height:100%;">
         <!-- Sidebar  -->
         <nav id="sidebar">
@@ -28,47 +30,48 @@ $(document).ready(function () {
             <ul class="list-unstyled components">
                 <p>Dummy Heading</p>
                 <li>
-                    <a href="../php/indexadmin.php"><i class='bx bx-grid-alt'>Dashboard</i></a>
+                    <a href="#"><i class='bx bx-grid-alt'>Dashboard</i></a>
                 </li>
                 <br>
-                <li>
-                    <a href="../php/depart.php"> <i class='bx bx-building'>Department</i></a>
-                </li>
-                <br>
+              
                 <li class="active">
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class='bx bx-calendar'>Leave management</i></a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
-                         <a href="../php/all_leave.php">All leave</a>
+                         <a href="#">Apply leave</a>
                         </li>
                         <li>
-                            <a href="#">Approved leave</a>
+                            <a href="#">All leave</a>
                         </li>
                         <li>
                             <a href="#">Pending leave</a>
                         </li>
                         <li>
+                            <a href="#">Approved leave</a>
+                        </li>
+                        <li>
                             <a href="#">Rejected leave</a>
                         </li>
+                        
                     </ul>
                 </li>
                 <br>
                
                 <li>
-                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class='bx bx-user'>staff</i></a>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class='bx bx-user '>Staff</i></a>
                     <ul class="collapse list-unstyled" id="pageSubmenu">
                         <li>
                             <a href="#">New staff</a>
                         </li>
                         <li>
-                            <a href="../php/staffreg.php">Manage staff</a>
+                            <a href="#">Edit staff</a>
                         </li>
                        
                     </ul>
                 </li>
                 <br>
                 <li>
-                    <a href="#"><i class='bx bx-stopwatch '>Leave</i></a>
+                    <a href="#">Extra</a>
                 </li>
                 
             </ul>
@@ -82,4 +85,3 @@ $(document).ready(function () {
             </ul>
         </nav>
         </div>
-</html>

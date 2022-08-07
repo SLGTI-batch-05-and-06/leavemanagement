@@ -1,4 +1,4 @@
-<?php include_once('Script.php');
+<?php include_once('Script.php'); 
 include_once('config.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,7 +22,8 @@ $(document).ready(function () {
 });
 
     </script>
-
+<?php include_once('navbar.php');
+   include_once('topnav.php'); ?>
     <div style="margin-left: 10px; margin-right:10px; padding:10px;">
         <div class="row">
         <div class="col-sm-2">
@@ -34,43 +35,20 @@ $(document).ready(function () {
             </div>
 
             <ul class="list-unstyled components">
-                <p></p>
+                <p>Dummy Heading</p>
                 <li>
-                    <a href=""><i class='bx bx-grid-alt'>Dashboard</i></a>
-                </li>
-                <br>
-                
-                <li class="active">
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class='bx bx-calendar'>Leave management</i></a>
-                    <ul class="collapse list-unstyled" id="homeSubmenu">
-                        <li>
-                         <a href="#">Apply leave</a>
-                        </li>
-                        <li>
-                            <a href="../php/hodall.php">All leave</a>
-                        </li>
-                        <li>
-                            <a href="#">Pending leave</a>
-                        </li>
-                        <li>
-                            <a href="#">Approved leave</a>
-                        </li>
-                        <li>
-                            <a href="#">Rejected leave</a>
-                        </li>
-                        
-                    </ul>
+                    <a href="../php/staff.php"><i class='bx bx-grid-alt'>Dashboard</i></a>
                 </li>
                 <br>
                
                 <li>
-                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class='bx bx-user '>Staff</i></a>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class='bx bx-stopwatch '>Leave</i></a>
                     <ul class="collapse list-unstyled" id="pageSubmenu">
                         <li>
-                            <a href="#">New staff</a>
+                            <a href="../php/apply.php">Apply leave</a>
                         </li>
                         <li>
-                            <a href="#">Edit staff</a>
+                            <a href="../php/leavebreak.php">Leave History</a>
                         </li>
                        
                     </ul>
@@ -92,22 +70,10 @@ $(document).ready(function () {
         </nav>
         </div>
         </div>
-            <div class="col-sm-10">
-                <div class="card bg-light text-white">
-                    <img class="card-img" src="../leaveimg/hrms-im.jpg" alt="Card image" style="height:200px; width:350px;">
-                    <div class="card-img-overlay">
-                        <h1 class="card-title" style="text-align:center; color:black;">Welcome Back</h1>
-                        <p class="card-text">
-                        <h2 style="text-align:justify; color:black; text-align:center;">Employee Leave Management System </p>
-
-                    </div>
-                </div>
-           
-       
-        <br>
-        <h2>Data Information</h2>
-        <br>
-        <div class="row">
+        <div class="col-sm-10">
+                <h1 class="card-title" style="text-align:left; color:black;">Leave Breakdown</h1>
+                <br>
+                <div class="row">
         <div class="col-sm-3">
             <div class="card-body ">
                <div class="row">
@@ -117,8 +83,7 @@ $(document).ready(function () {
                </div>
                </div>
 
-
-              <div class="col-sm-3">
+               <div class="col-sm-3">
             <div class="card-body ">
                <div class="row">
                <div class="col-sm-9 bg-white" style="height:80px; text-align:center; padding:20px; border-radius:10px 0px 0px 10px;">Approved Leave</div>
@@ -126,6 +91,7 @@ $(document).ready(function () {
                </div>
                </div>
                </div>
+
 
                <div class="col-sm-3">
                <div class="card-body ">
@@ -136,7 +102,6 @@ $(document).ready(function () {
                </div>
                </div>
 
-           
                <div class="col-sm-3">
                <div class="card-body ">
                <div class="row">
@@ -145,76 +110,31 @@ $(document).ready(function () {
                </div>
                </div>
                </div>
+               <br>
 
-
-
-        </div>
-        <br>
-        <br>
-        <div class="row">
-            <div class="col-sm-4">
-                <div class="card" style="width:100%; padding:10px;">
-                   <img class="card-img" src="../leaveimg/PngItem_5444333.png" style="height:30px; width:30px; align:left;">
-                    <div class="card-body">
-                        <h2>Department Heads</h2>
-                    </div>
                 </div>
+                <br>
+                <br>
+                <div class="card">
+    
+                    
+                        <table class="table table-striped">
+                        <thead>
+                                    <tr>
+                                       
+                                        <th scope="col">Leave Type</th>
+                                        <th scope="col">Date from</th>
+                                        <th scope="col">Date to </th>
+                                        <th scope="col">no of days</th>
+                                        <th scope="col">Hod Status</th>
+                                        <th scope="col">Reg Status</th>
+                                        <th scope="col">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
 
 
-            </div>
-<br>
-<p>
-            <div class="col-sm-4">
-                <div class="card" style="width:100%; padding:10px;">
-
-                    <div class="card-body">
-                        <h2>Charts</h2>
-                    </div>
-                </div>
-
-
-            </div>
-<br>
-<br>
-            <div class="col-sm-4">
-                <div class="card" style="width:100%; padding:10px;">
-
-                    <div class="card-body">
-                        <h2>Staffs</h2>
-                    </div>
-                </div>
-
-
-            </div>
-            <br>
-        </div>
-
-        <br>
-
-
-        <br>
-        <table class="table table-striped">
-
-
-            <thead>
-                <tr>
-                    <th colspan="7">
-                        <h2>Leave History</h2>
-                    </th>
-                </tr>
-                <tr>
-                   
-                <th scope="col">Staff Id</th>
-                    <th scope="col">Staff name</th>
-                    <th scope="col"> start Date</th>
-                    <th scope="col"> End Date</th>
-                    <th scope="col"> Reason</th>
-                    <th scope="col"> HODStatus</th>
-                    <th scope="col">Action</th>
-                </tr>
-            </thead>
-            <tbody>
-            <?php
+                                <?php
                                  
                                  $sql="select * from apply";
                                  $result=mysqli_query($con,$sql);
@@ -223,14 +143,14 @@ $(document).ready(function () {
                                   while($row = mysqli_fetch_assoc($result))  //separate each row
                                   {
                                      echo '<tr>
-                                     <td>',$row['staffid'],'</td>
-                                     <td>',$row['lastname'],'</td>
+                                     <td>',$row['leavetype'],'</td>
                                      <td>',$row['startdate'],'</td>
                                      <td>',$row['enddate'],'</td>
-                                     <td>',$row['reason'],'</td>
-                                     <td>',$row['hodstatus'],'</td>
+                                     <td>',$row['no_of_days'],'</td>
+                                     <td>',$row['HODstatus'],'</td>
+                                     <td>',$row['Regstatus'],'</td>
                                      <td>
-                                     <a href="../php/hodleave.php"><i class="fa fa-eye" style="font-size:36px; color:black;" ></i></a>
+                                     <a href="../php/leave.php"><i class="fa fa-eye" style="color:black "></i></a> 
                                 </td>
                                      </tr>
                                      ';
@@ -241,20 +161,20 @@ $(document).ready(function () {
                                      echo "no rows";
                                  }
                                  ?>
+   
+       
+        
+       
+                               
+                             
+</table>
+</div>
 
 
-
-               
-                   
-                    
-
-              
-            </tbody>
-        </table>
-        </div>
-        </div>
-    </div>
-
-</body>
-
-</html>
+                   </div>
+                   </div>
+                   </div>
+                            </body>
+                            </html>
+                  
+             

@@ -58,18 +58,41 @@ $(document).ready(function () {
             <ul class="list-unstyled components">
                 <p>Dummy Heading</p>
                 <li>
-                    <a href="../php/staff.php"><i class='bx bx-grid-alt'>Dashboard</i></a>
+                    <a href="#"><i class='bx bx-grid-alt'>Dashboard</i></a>
+                </li>
+                <br>
+                
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class='bx bx-calendar'>Leave management</i></a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                         <a href="#">Apply leave</a>
+                        </li>
+                        <li>
+                            <a href="../php/all_leave.php">All leave</a>
+                        </li>
+                        <li>
+                            <a href="#">Pending leave</a>
+                        </li>
+                        <li>
+                            <a href="#">Approved leave</a>
+                        </li>
+                        <li>
+                            <a href="#">Rejected leave</a>
+                        </li>
+                        
+                    </ul>
                 </li>
                 <br>
                
                 <li>
-                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class='bx bx-stopwatch '>Leave</i></a>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class='bx bx-user '>Staff</i></a>
                     <ul class="collapse list-unstyled" id="pageSubmenu">
                         <li>
-                            <a href="../php/apply.php">Apply leave</a>
+                            <a href="#">New staff</a>
                         </li>
                         <li>
-                            <a href="../php/leavebreak.php">Leave History</a>
+                            <a href="#">Edit staff</a>
                         </li>
                        
                     </ul>
@@ -100,26 +123,25 @@ $(document).ready(function () {
         <div class="row">
             <div class="col-sm-4">
             <form>
-             Fullname<input type="text"  class="form-control" name="fullname" required>
-             Phone no<input type="text"  class="form-control" name="phone no" required>
-             Applied no of days<input type="text"  class="form-control" name="applied_no_of_day" required>
+             Fullname<input type="text"  class="form-control" name="fullname">
+             Phone no<input type="text"  class="form-control" name="phone no">
+             Applied no of days<input type="text"  class="form-control" name="applied_no_of_day" >
 
             </div>
             <div class="col-sm-4">
-            Email address<input type="text" class="form-control" name="email" required>
-             Leave type<input type="text"  class="form-control" name="Leavetype" required>
-             Available no of days<input type="text" class="form-control" name="available_no_of_day" required>
+            Email address<input type="text" class="form-control" name="email">
+             Leave type<input type="text"  class="form-control" name="Leavetype">
+             Available no of days<input type="text" class="form-control" name="available_no_of_day">
                
             </div>
             <div class="col-sm-4">
             Gender<br>
-      <select name="Choose your gender"  class="form-control"  style="width: 100%;" required>
-      <option value="female">Choose your gender</option>
+      <select name=""  class="form-control"  style="width: 100%;">
         <option value="female">Female</option>
         <option value="male">male</option>
       </select>
-            Applied date<input type="text" class="form-control" name="applieddate" required>
-           Leave period<input type="text"  class="form-control" name="leavep" required>
+            Applied date<input type="text" class="form-control" name="applieddate">
+           Leave period<input type="text"  class="form-control" name="leavep">
             </div>
             </div>
             <br>
@@ -128,7 +150,7 @@ $(document).ready(function () {
             Leave reason
         </div>
         <div class="col-sm-9">
-        <textarea name="enter your address" rows="05" columns="20"   class="form-control" name="leavereason" style="width:100% ;" required></textarea>
+        <textarea name="enter your address" rows="05" columns="20"   class="form-control" name="leavereason" style="width:100% ;" ></textarea>
         </div>
         </div>
         <br>
@@ -166,17 +188,13 @@ $(document).ready(function () {
           <div class="row">
         <div class="col-sm-4"></div>
         <div class="col-sm-4"></div>
-        <div class="col-sm-4">
-        
-        
-        </div>
+      
     </div>
     </div>
     </form>
    
   </div>
-  <center>
-
+  
                     </div>
                 </div>
                 </div>

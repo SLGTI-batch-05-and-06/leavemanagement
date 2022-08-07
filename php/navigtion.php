@@ -1,10 +1,15 @@
-<?php include_once('index.php') ;?>
+<?php include_once('script.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/navig.css">
+    <link rel="stylesheet" href="../css/depart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 <body>
@@ -16,8 +21,10 @@ $(document).ready(function () {
 });
 
     </script>
-</body>
-
+      <nav class="sidebar close">
+        <header>
+         <i class='bx bx-chevron-right toggle'></i>
+        </header>
 <div class="wrapper" style="height:100%;">
         <!-- Sidebar  -->
         <nav id="sidebar">
@@ -58,7 +65,7 @@ $(document).ready(function () {
                     <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class='bx bx-user'>staff</i></a>
                     <ul class="collapse list-unstyled" id="pageSubmenu">
                         <li>
-                            <a href="#">New staff</a>
+                            <a href="../php/addstaff.php">New staff</a>
                         </li>
                         <li>
                             <a href="../php/staffreg.php">Manage staff</a>
@@ -70,9 +77,14 @@ $(document).ready(function () {
                 <li>
                     <a href="#"><i class='bx bx-stopwatch '>Leave</i></a>
                 </li>
+                <br>
+                <li>
+                    <a href="#">Extra</a>
+                </li>
                 
             </ul>
             <br>
+            
 
             <ul class="list-unstyled CTAs">
                 <li>
@@ -82,4 +94,51 @@ $(document).ready(function () {
             </ul>
         </nav>
         </div>
+        </div>
+        <!-- Page Content  -->
+       
+   
+        <div class="text">Dashboard Sidebar</div>
+    </section>
+
+    <script>
+        const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle"),
+      searchBtn = body.querySelector(".search-box"),
+      modeSwitch = body.querySelector(".toggle-switch"),
+      modeText = body.querySelector(".mode-text");
+
+
+toggle.addEventListener("click" , () =>{
+    sidebar.classList.toggle("close");
+})
+
+searchBtn.addEventListener("click" , () =>{
+    sidebar.classList.remove("close");
+})
+
+modeSwitch.addEventListener("click" , () =>{
+    body.classList.toggle("dark");
+    
+    if(body.classList.contains("dark")){
+        modeText.innerText = "Light mode";
+    }else{
+        modeText.innerText = "Dark mode";
+        
+    }
+});
+    </script>
+     
+  
+                           
+                               
+                       </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
 </html>
